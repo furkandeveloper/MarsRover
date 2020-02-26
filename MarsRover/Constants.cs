@@ -10,7 +10,7 @@ namespace MarsRover
     /// </summary>
     public static class Constants
     {
-        /// <summary>
+        /// <summary> 
         /// Constants for Debug Messages
         /// </summary>
         public static class DebugMessages
