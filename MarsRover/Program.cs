@@ -20,9 +20,9 @@ namespace MarsRover
 
             var logger = serviceProvider.GetService<ILoggerFactory>()
             .CreateLogger<Program>();
-            logger.LogDebug("Starting application");
+            logger.LogDebug(Constants.DebugMessages.START_APP);
 
-            logger.LogDebug("All done !!!");
+            logger.LogDebug(Constants.DebugMessages.DONE_APP);
         }
     }
 }
