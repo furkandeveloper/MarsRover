@@ -9,10 +9,17 @@ using static MarsRover.Models.Enums;
 
 namespace MarsRover.Services.Concrete
 {
+    /// <summary>
+    /// Rover controls his movements according to the incoming text. 
+    /// </summary>
     public class RoverManager : IRoverService
     {
         private static Position position = new Position();
 
+        /// <summary>
+        /// Initilaze Method
+        /// </summary>
+        /// <returns></returns>
         public async Task Initilaze()
         {
             Console.WriteLine(Constants.UserFriendlyMessages.ENTER_MOTION_ENTRIES);
@@ -39,6 +46,10 @@ namespace MarsRover.Services.Concrete
             Console.WriteLine(position.X + " " + position.Y + " " + position.Directory);
         }
 
+        /// <summary>
+        /// Move in the direction.
+        /// </summary>
+        /// <returns></returns>
         protected async Task Move()
         {
             switch (position.Directory)
@@ -60,6 +71,10 @@ namespace MarsRover.Services.Concrete
             }
         }
 
+        /// <summary>
+        /// Turn left 90 degrees.
+        /// </summary>
+        /// <returns></returns>
         protected async Task Left()
         {
             switch (position.Directory)
@@ -81,6 +96,10 @@ namespace MarsRover.Services.Concrete
             }
         }
 
+        /// <summary>
+        /// Turn right 90 degrees.
+        /// </summary>
+        /// <returns></returns>
         protected async Task Right()
         {
             switch (position.Directory)

@@ -19,6 +19,9 @@ namespace MarsRover
             public const string DONE_APP = "All Done !!!";
         }
 
+        /// <summary>
+        /// Constans for User Friendly Messages
+        /// </summary>
         public static class UserFriendlyMessages
         {
             public const string ENTER_MOTION_ENTRIES = "Enter the motion entries :";

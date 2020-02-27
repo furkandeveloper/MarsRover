@@ -5,6 +5,9 @@ using static MarsRover.Models.Enums;
 
 namespace MarsRover.Models
 {
+    /// <summary>
+    /// Entity that stores Rover's location
+    /// </summary>
     public class Position
     {
         public Position()
