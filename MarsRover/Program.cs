@@ -17,7 +17,6 @@ namespace MarsRover
         {
             var serviceProvider = new ServiceCollection()
                                             .AddLogging()
-                                            .AddScoped<IHelperService, HelperManager>()
                                             .AddScoped<IRoverService, RoverManager>()
                                             .BuildServiceProvider();
 
