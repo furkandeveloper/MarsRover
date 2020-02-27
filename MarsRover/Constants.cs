@@ -18,5 +18,10 @@ namespace MarsRover
             public const string START_APP = "Start Application !!!";
             public const string DONE_APP = "All Done !!!";
         }
+
+        public static class UserFriendlyMessages
+        {
+            public const string ENTER_MOTION_ENTRIES = "Enter the motion entries :";
+        }
     }
 }
